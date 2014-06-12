@@ -11,3 +11,8 @@ Using different jQuery plugins on our Restaurant Website
 
 ## Slideshow
 
+- [Flexslider](https://github.com/woothemes/FlexSlider)
+
+## Doing things on Scroll
+
+- [Waypoints](https://github.com/imakewebthings/jquery-waypoints)
