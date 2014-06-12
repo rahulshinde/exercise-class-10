@@ -61,12 +61,14 @@
 		<script src="js/vendor/jquery.scrollTo.min.js"></script>
 		<script src="js/vendor/jquery.localScroll.min.js"></script>
 		<script>
-			$('.masthead-nav').localScroll({
-			   axis:'y',
-			   queue:true,
-			   hash: true,
-			   duration: 500,
-			   easing: 'swing'
+			$(function (){
+				$('.masthead-nav').localScroll({
+				   axis:'y',
+				   queue:true,
+				   hash: true,
+				   duration: 500,
+				   easing: 'swing'
+				});
 			});
 		</script>
     </body>

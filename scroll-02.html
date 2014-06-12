@@ -31,14 +31,16 @@
 
 		<div class="container">
 			<header class="masthead">
-				<h1 class="brand">My Restaurant</h1>
-				<nav class="masthead-nav">
-					<ul class="nav">
-						<li><a href="#section-1">Link 1</a></li>
-						<li><a href="#section-2">Link 2</a></li>
-						<li><a href="#section-3">Link 3</a></li>
-					</ul>
-				</nav>
+				<div class="container">
+					<h1 class="brand">My Restaurant</h1>
+					<nav class="masthead-nav">
+						<ul class="nav">
+							<li><a href="#section-1">Link 1</a></li>
+							<li><a href="#section-2">Link 2</a></li>
+							<li><a href="#section-3">Link 3</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 
 			<div class="content">
@@ -62,5 +64,25 @@
 		<script src="js/vendor/jquery.localScroll.min.js"></script>
 		<script src="js/vendor/waypoints.min.js"></script>
 		<script src="js/vendor/waypoints-sticky.min.js"></script>
+		<script>
+			$(function (){
+				$('.masthead-nav').localScroll({
+				   axis:'y',
+				   queue:true,
+				   hash: true,
+				   duration: 500,
+				   easing: 'swing',
+				   offset: function() {
+				   	console.log($('.masthead').height() *-1)
+				   	return {
+				   		top: $('.masthead').height() *-1,
+				   		left: 0
+				   	};
+				   }
+				});
+
+				$('.masthead').waypoint('sticky');
+			});
+		</script>
     </body>
 </html>

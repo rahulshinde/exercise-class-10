@@ -99,6 +99,11 @@ textarea {
 
 /*    Navigation
 ===========================================================*/
+.brand {
+    margin: 0;
+}
+
+
 .nav,
 .nav li {
     padding: 0;
@@ -133,16 +138,18 @@ html,
 }
 
 
+/*    Sticky Styles
+===========================================================*/
 
-
-
-
-
-
-
-
-
-
+.eg-waypoints .masthead.stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
 
 
 /* ==========================================================================
