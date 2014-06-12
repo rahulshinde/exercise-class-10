@@ -16,38 +16,49 @@
         <!-- Commented Out Reset - Remove here to enable
         <link rel="stylesheet" href="css/reset.css">
         End of comment, remove to enable -->
-        
+
         <!-- optional type and form styling
         <link rel="stylesheet" href="css/base.css"> -->
         <link rel="stylesheet" href="css/skeleton.css">
-        
+
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body class="eg-scroll">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+		<div class="container">
+			<header class="masthead">
+				<h1 class="brand">My Restaurant</h1>
+				<nav class="masthead-nav">
+					<ul class="nav">
+						<li><a href="#section-1">Link 1</a></li>
+						<li><a href="#section-2">Link 2</a></li>
+						<li><a href="#section-3">Link 3</a></li>
+					</ul>
+				</nav>
+			</header>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<div class="content">
+				<div class="section" id="section-1">
+					<h2>Section 1</h2>
+				</div>
+				<div class="section" id="section-2">
+					<h2>Section 2</h2>
+				</div>
+				<div class="section" id="section-3">
+					<h2>Section 3</h2>
+				</div>
+			</div>
+		</div><!-- /.container -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        
-        <!-- Load jQuery Plugins Here -->
-        
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <!-- Load jQuery Plugins Here -->
+		<script src="js/vendor/jquery.scrollTo.min.js"></script>
+		<script src="js/vendor/jquery.localScroll.min.js"></script>
     </body>
 </html>

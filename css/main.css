@@ -97,8 +97,40 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*    Navigation
+===========================================================*/
+.nav,
+.nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav > li > a {
+    display: block;
+}
 
 
+/*    Scroll Style
+===========================================================*/
+html,
+.eg-scroll,
+.eg-scroll .container,
+.eg-scroll .content,
+.eg-scroll .section {
+    position: relative;
+    height: 100%;
+}
+
+.eg-scroll .section {
+    height: 100%;
+    margin-bottom: 36px;
+    background-color: #dadada;
+}
 
 
 
