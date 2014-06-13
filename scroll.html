@@ -60,5 +60,19 @@
         <!-- Load jQuery Plugins Here -->
 		<script src="js/vendor/jquery.scrollTo.min.js"></script>
 		<script src="js/vendor/jquery.localScroll.min.js"></script>
+
+		<script>
+
+			$(function (){
+				$('.masthead-nav').localScroll({
+					axis: 'y' ,
+					hash: true ,
+					duration: 1000 ,
+					easing: 'swing'
+				});
+			});
+
+		</script>
+		
     </body>
 </html>
